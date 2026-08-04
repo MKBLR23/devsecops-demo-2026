@@ -1,0 +1,23 @@
+name: dev-sec-ops-pipeline
+on: push
+jobs:
+  dev-sec-ops-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: secret-scannig
+        run: echo "Secret scannig"
+      - name: sca
+        run: "Running SCA"
+      - name: sast
+        run: "Running SAST"
+      - name: ica-scanning
+        run: "Running ICA scanning"
+      - name: container-scanning
+        run: "Running Container scanning"
+      - name: dast
+        run: "Running DAST scanning"
+      - name: infra
+        run: "Running infra scanning"
+      - name: compliance-check
+        run: "Running Compliance check.PaC scanning"
+        
